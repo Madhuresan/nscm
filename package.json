@@ -9,6 +9,7 @@
   },
   "scripts": {
     "test": "nyc tape tests/*-test.js | tap-spec",
+    "test-mochaawesome": "nyc --reporter=html mocha test/*.js --reporter mochawesome --exit",
     "coverage": "nyc report",
     "detailed-coverage": "nyc report --reporter=lcov",
     "lint": "standard"
